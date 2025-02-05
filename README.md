@@ -18,8 +18,12 @@ Before you begin, make sure you have the following installed on your machine:
 - Docker: [Download Docker](https://www.docker.com/products/docker-desktop)
 - Docker Compose: Comes bundled with Docker Desktop (on Windows and macOS), otherwise follow [Docker Compose installation guide](https://docs.docker.com/compose/install/)
 
+The credentials for login are 
+email - example1@gmail.com
+password - example
+
   
- Follow the instructions below to clone the repo and run the docker-compose.yml file
+Follow the instructions below to clone the repo and run the docker-compose.yml file
 once you clone and run the docker compose commands you will see both frontend and backend in your docker with specfied ports where both frontend and backend is hosted
 ## Setting Up the Project
 

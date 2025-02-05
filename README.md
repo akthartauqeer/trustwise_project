@@ -22,8 +22,8 @@ Before you begin, make sure you have the following installed on your machine:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/trustwise.git
-cd trustwise
+git clone https://github.com/akthartauqeer/trustwise_project.git
+cd trustwise_project
 
 In the root of the project (where docker-compose.yml is located), run the following command to build and start the containers:
 docker-compose up --build

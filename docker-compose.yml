@@ -1,0 +1,29 @@
+
+services:
+  frontend:
+    image: tauqeerakthar/trustwise_frontend:latest
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:3000"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+    restart: always
+
+  backend:
+    image: tauqeerakthar/trustwise_backend:latest
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5002:5002"
+    networks:
+      - app-network
+    restart: always
+
+networks:
+  app-network:
+    driver: bridge

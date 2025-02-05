@@ -7,6 +7,7 @@ Welcome to the Trustwise project repository. This project consists of both a fro
 The Trustwise project is a web application built with react for the frontend and flask for the backend.  Both the services, which can be run in Docker containers using Docker Compose.
 
 ## Video Walkthrough
+https://drive.google.com/drive/folders/13tFzGCEFfi1HD5wDnt2zZ6kjPWYg0nte?usp=drive_link
 
 
 

@@ -1,0 +1,73 @@
+.compare-container {
+    padding: 30px;
+    max-width: 1300px;
+  min-height: 100vh;margin-bottom: 30px;
+    margin: auto;
+    margin-top: 60px;
+    background: linear-gradient(135deg, #f3f3f3, #e1e1e1);
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.compare-container:hover {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.dropdown {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.charts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.charrt-container {
+    background: white;
+  margin-left: 250px;
+    width: 750px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.charrt-container:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+h4 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+h2{
+    margin-bottom: 10px;
+}
+
+.loading, .error {
+    font-size: 18px;
+    color: #ff4d4d;
+    text-align: center;
+    margin-top: 20px;
+}
+.placeholder-message {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #888;
+    margin-top: 50px;
+  }
+  

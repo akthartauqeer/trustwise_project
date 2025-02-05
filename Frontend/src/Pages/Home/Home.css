@@ -1,0 +1,205 @@
+/* Main container to center everything */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    transition: all 0.3s ease;
+    overflow: hidden; /* Ensures no unnecessary scrolling */
+    height: 100vh; /* Full height */
+}
+
+/* Form container styling */
+.form-container {
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px; /* Adjusted margin */
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex-grow: 1; /* Allow it to grow */
+    overflow-y: auto; /* Allow scrolling */
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+    font-size: 2em; /* Increased size */
+    font-weight: bold;
+    color: #FFFFFF; /* White color for better visibility */
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the textarea input box */
+.input-text {
+    width: 100%;
+    border-color: #111;
+    border-width: 2px;
+    padding: 12px;
+    background-color: #dedede;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    outline: none;
+    resize: vertical;
+    min-height: 120px;
+    box-sizing: border-box;
+    transition: margin-top 0.5s ease;
+}
+
+/* Textarea focus state */
+.input-text:focus {
+    border-color: #111;
+}
+
+/* Styling for the options (radio buttons) */
+.options {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.options label {
+    display: inline-block;
+    font-size: 14px;
+    color: #FFFFFF; /* White color for better visibility */
+    cursor: pointer;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Styling for the submit button (arrow) */
+.submit-btn {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Changed to a normal button shape */
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the result container */
+.result-container {
+    margin-bottom: 300px;
+    text-align: left;
+    font-size: 16px;
+    color: #FFFFFF; /* White color for better visibility */
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: slideDown 0.5s forwards;
+    overflow-y:scroll; /* Allow scrolling if content overflows */
+    max-height: calc(100vh - 300px); /* Adjust based on your layout */
+}
+
+.result-container h3 {
+    font-size: 30px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Additional result styling */
+.result-container p {
+    margin: 5px 0;
+}
+
+/* Animation for sliding result down */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fixed position for input area */
+.form {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+.progress-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.progress-bar {
+    margin-top: 90px;
+    border-radius: 5px;
+    position: relative;
+    height: 30px; /* Height of the progress bar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.progress {
+    background-color:#4caf50; /* Color of the progress */
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.3s ease; /* Smooth transition for the width */
+}
+
+.progress-label {
+    position: absolute;
+    top: -25px; /* Position label above the progress bar */
+    left: 10px; /* Position label inside the progress bar */
+    font-weight: bold; /* Make the label bold */
+    color: #111; /* Text color */
+}
+.info-box-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px; /* Space between welcome message and info boxes */
+}
+
+.info-box {
+    flex: 1; /* Make both boxes take equal space */
+    margin: 0 10px; /* Margin between the boxes */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    position: relative; /* For positioning the tooltip */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+
+.info-box span {
+    font-size: 1.5em; /* Increase font size */
+    text-decoration: underline; /* Underline the text */
+    color: #111; /* Text color */
+}
+
+
+
+.info-box:hover::after {
+    opacity: 1; /* Show tooltip on hover */
+    visibility: visible; /* Make tooltip visible */
+}
+.chart-container{
+    margin-top: 40px;
+}

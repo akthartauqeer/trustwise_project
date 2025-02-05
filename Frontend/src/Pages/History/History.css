@@ -1,0 +1,97 @@
+.history-container {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .sidebar {
+    width: 250px; /* Fixed width for the sidebar */
+    background-color: #f4f4f9; /* Light background color */
+    padding: 20px; /* Padding inside the sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    height: 110vh; /* Full height of the viewport */
+  }
+  
+  .sidebar h3 {
+    text-align: center; /* Center align the heading */
+    margin-top: 60px; /* Space above the heading */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .timestamp-item {
+    padding: 10px; /* Padding for each item */
+    margin: 5px 0; /* Margin between items */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    display: flex; /* Flexbox for item layout */
+    flex-direction: column; /* Stack children vertically */
+  }
+  
+  .timestamp-item:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+  }
+  
+  .timestamp-item.selected {
+    background-color: #d1d1d1; /* Darker gray for selected item */
+  }
+  
+  .timestamp-text {
+    white-space: normal; /* Allow text to wrap */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Ellipsis for overflow text */
+    max-width: 180px; /* Max width for text */
+    display: block; /* Block display for text */
+  }
+  
+  .main-content {
+    flex: 1; /* Take remaining space */
+    padding: 20px; /* Padding for main content */
+    margin-top: 60px;
+    background-color: #ffffff; /* White background for main content */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .details {
+    background-color: #f9f9f9; /* Light gray background for details */
+    padding: 20px; /* Padding inside details */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+  
+  .message {
+    text-align: center; /* Center align message text */
+    font-size: 18px; /* Font size for message */
+    color: #555; /* Dark gray color for message */
+  }
+  
+  .score-graph {
+    margin-top: 20px; /* Space above score graph */
+    margin-bottom: 50px; /* Space below score graph */
+  }
+  
+  .graph-label {
+    font-weight: bold; /* Bold text for graph label */
+    margin-bottom: 5px; /* Space below label */
+    display: block; /* Block display for label */
+  }
+  
+  .loading-bar-container {
+    background-color: #ddd; /* Light gray background for loading bar */
+    border-radius: 10px; /* Rounded corners */
+    height: 20px; /* Height of loading bar container */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .loading-bar {
+    background-color: #4caf50; /* Green color for loading bar */
+    height: 100%; /* Full height */
+    transition: width 0.3s ease-in-out; /* Smooth width transition */
+  }
+  
+  .score-graph + .score-graph {
+    margin-top: 10px; /* Space between consecutive score graphs */
+  }

@@ -19,7 +19,7 @@ Before you begin, make sure you have the following installed on your machine:
 
   
  Follow the instructions below to clone the repo and run the docker-compose.yml file
-once you run clone and run the commands you will see both frontend and backend in your docker with specfied ports where both frontend and backend is hoted
+once you clone and run the docker compose commands you will see both frontend and backend in your docker with specfied ports where both frontend and backend is hosted
 ## Setting Up the Project
 
 ### 1. Clone the repository
